@@ -1,0 +1,40 @@
+{
+    "platforms": {
+        "web": {
+            "engine": "engine-rn-web"
+        }
+    },
+    "plugins": {
+        "react": "source:rnv",
+        "react-art": "source:rnv",
+        "react-dom": "source:rnv",
+        "react-native": "source:rnv",
+        "react-native-web": "source:rnv",
+        "next": "source:rnv",
+        "react-native-theoplayer": {
+            "version": "1.7.2",
+            "webpackConfig" : {
+            }
+        },
+        "@react-native-community/cli-platform-ios": "source:rnv",
+        "@react-native-community/cli": "source:rnv"
+    },
+    "extendsTemplate": "@rnv/template-starter/renative.json",
+    "projectName": "rntest",
+    "workspaceID": "rnv",
+    "defaults": {
+        "title": "Hello Renative",
+        "id": "com.mycompany.rntest",
+        "supportedPlatforms": [
+            "web"
+        ]
+    },
+    "engines": {},
+    "templates": {
+        "@rnv/template-starter": {
+            "version": "0.36.1"
+        }
+    },
+    "currentTemplate": "@rnv/template-starter",
+    "isMonorepo": false
+}
