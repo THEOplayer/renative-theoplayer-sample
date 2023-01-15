@@ -2,31 +2,44 @@
     "platforms": {
         "web": {
             "engine": "engine-rn-web"
+        },
+        "android": {
         }
     },
     "plugins": {
         "react": "source:rnv",
         "react-art": "source:rnv",
         "react-dom": "source:rnv",
-        "react-native": "source:rnv",
+        "react-native": {
+            "version": "0.70.0"
+        },
         "react-native-web": "source:rnv",
         "next": "source:rnv",
         "react-native-theoplayer": {
             "version": "1.7.2",
-            "webpackConfig" : {
+            "web": {
+
+            },
+            "android": {
+                "package": "com.theoplayer.ReactTHEOplayerPackage",
+                "path": "node_modules/react-native-theoplayer/android"
             }
         },
         "@react-native-community/cli-platform-ios": "source:rnv",
-        "@react-native-community/cli": "source:rnv"
+        "@react-native-community/cli": "source:rnv",
+        "react-native-tvos": "source:rnv"
     },
     "extendsTemplate": "@rnv/template-starter/renative.json",
-    "projectName": "rntest",
+    "projectName": "renative-theoplayer-sample",
     "workspaceID": "rnv",
     "defaults": {
-        "title": "Hello Renative",
-        "id": "com.mycompany.rntest",
+        "title": "THEOplayer Renative Sample",
+        "id": "com.theoplayer.sample.renative",
         "supportedPlatforms": [
-            "web"
+            "web",
+            "android",
+            "androidtv",
+            "firetv"
         ]
     },
     "engines": {},
