@@ -1,13 +1,16 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import { View } from 'react-native';
 import { THEOplayerView } from "react-native-theoplayer";
 import { ActionButton } from "../actionbutton/ActionButton";
 import styles from './styles';
 import { PlayButton } from "../config";
 
+const USE_RN_UI = true;
+
 const playerConfig = {
     license: undefined,
-    libraryLocation: 'theoplayer'
+    libraryLocation: 'theoplayer',
+    chromeless: USE_RN_UI
 };
 
 const source = {
@@ -33,13 +36,13 @@ const App = () => {
                 source={source}
                 paused={paused}/>
 
-            <ActionButton
+            {USE_RN_UI && <ActionButton
                 touchable={true}
                 icon={paused ? PlayButton : null}
                 style={styles.fullScreenCenter}
                 iconStyle={styles.playButton}
                 onPress={onTogglePlayPause}
-            />
+            />}
         </View>
     );
 };
