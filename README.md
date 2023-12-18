@@ -1,6 +1,6 @@
 # renative-theoplayer-sample
 
-Demonstrates using react-native-theoplayer in a ReNative app
+Demonstrates using react-native-theoplayer in a ReNative app.
 
 ## Quick Start
 
@@ -9,6 +9,7 @@ Demonstrates using react-native-theoplayer in a ReNative app
 ```bash
 $ yarn install
 $ npx rnv run -p web
+$ npx rnv run -p android
 ```
 
 ### THEOplayer Web Workers
@@ -23,8 +24,6 @@ copyTHEOworkers: () => {
     const targetFolder = `${projectRoot}/appConfigs/base/assets/web/public/theoplayer`;
     const workerFiles = [
         'theoplayer.d.js',
-        'theoplayer.e.js',
-        'theoplayer.p.js',
         'THEOplayer.transmux.asmjs.js',
         'THEOplayer.transmux.js',
         'THEOplayer.transmux.wasm',
