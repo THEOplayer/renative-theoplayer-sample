@@ -36,6 +36,7 @@
         "@react-native-community/cli": "^6.0.0",
         "@react-native-community/cli-platform-ios": "^6.0.0",
         "@react-native-community/masked-view": "0.1.6",
+        "@react-native-community/slider": "^4.5.0",
         "@react-native-community/viewpager": "2.0.2",
         "@react-navigation/bottom-tabs": "5.1.1",
         "@react-navigation/core": "5.12.3",
@@ -47,6 +48,7 @@
         "@react-navigation/stack": "5.9.0",
         "@react-navigation/web": "1.0.0-alpha.9",
         "@rnv/renative": "0.36.1",
+        "@theoplayer/react-native-ui": "^0.3.0",
         "hash-source": "1.0.4",
         "next": "12.1.6",
         "react": "18.1.0",
@@ -59,15 +61,14 @@
         "react-native-safe-area-context": "3.1.0",
         "react-native-safe-area-view": "0.14.5",
         "react-native-screens": "2.2.0",
+        "react-native-svg": "^14.1.0",
         "react-native-tab-view": "2.13.0",
-        "react-native-theoplayer": "1.7.2",
+        "react-native-theoplayer": "3.3.2",
         "react-native-tvos": "0.66.3-1",
         "react-native-vector-icons": "8.1.0",
         "react-native-web": "0.18.0",
         "react-native-web-image-loader": "0.0.5",
-        "react-router-dom": "6.3.0"
-    },
-    "resolutions": {
-        "theoplayer": "^4.6.0"
+        "react-router-dom": "6.3.0",
+        "theoplayer": "^6.6.1"
     }
 }

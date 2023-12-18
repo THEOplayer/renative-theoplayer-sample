@@ -8,8 +8,6 @@ const hooks = {
         const targetFolder = `${projectRoot}/appConfigs/base/assets/web/public/theoplayer`;
         const workerFiles = [
             'theoplayer.d.js',
-            'theoplayer.e.js',
-            'theoplayer.p.js',
             'THEOplayer.transmux.asmjs.js',
             'THEOplayer.transmux.js',
             'THEOplayer.transmux.wasm',

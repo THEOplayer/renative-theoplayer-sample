@@ -16,9 +16,8 @@
         "react-native-web": "source:rnv",
         "next": "source:rnv",
         "react-native-theoplayer": {
-            "version": "1.7.2",
+            "version": "3.3.2",
             "web": {
-
             },
             "android": {
                 "package": "com.theoplayer.ReactTHEOplayerPackage",
