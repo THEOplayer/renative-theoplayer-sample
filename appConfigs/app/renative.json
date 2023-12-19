@@ -2,10 +2,14 @@
     "extendsTemplate": "@rnv/template-starter/appConfigs/base/renative.json",
     "id": "app",
     "common": {
-        "id": "com.theoplayer.sample.renative",
-        "title": "THEOplayer Renative Sample",
-        "description": "ReNative App",
-        "buildSchemes": {}
+        "id": "com.theoplayer.renative.sample",
+        "title": "RenativeTHEOplayer",
+        "description": "THEOplayer Renative Sample",
+        "buildSchemes": {},
+        "runtime": {
+            "welcomeMessage": "Hello ReNative!"
+        }
     },
-    "platforms": {}
+    "platforms": {
+    }
 }

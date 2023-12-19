@@ -1,16 +1,10 @@
 {
-    "extends": "@flexn/typescript/tsconfig.app.json",
+    "extends": "@flexn/typescript-config/tsconfig.app.json",
     "compilerOptions": {
         "outDir": "./lib",
-        "rootDir": "."
+        "rootDir": ".",
+        "noImplicitAny": false
+        // "resolveJsonModule": false
     },
-    "include": [
-        "./src/**/*",
-        "./src/**/*.json",
-        "./types.d.ts",
-        "./package.json",
-        "./app.json",
-        "./platformAssets/runtime/fontManager.js",
-        "./platformAssets/runtime/logo.png"
-    ]
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
 }

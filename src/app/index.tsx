@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { useState } from 'react';
 import {
-    CastMessage,
     CenteredControlBar,
     CenteredDelayedActivityIndicator,
     ControlBar,
@@ -21,8 +20,8 @@ import {
     UiContainer,
 } from '@theoplayer/react-native-ui';
 import { PlayerConfiguration, PlayerEventType, THEOplayer, THEOplayerView } from 'react-native-theoplayer';
-
 import { Platform, StyleSheet, View, ViewStyle } from 'react-native';
+
 const playerConfig: PlayerConfiguration = {
     // Get your THEOplayer license from https://portal.theoplayer.com/
     // Without a license, only demo sources hosted on '*.theoplayer.com' domains can be played.
@@ -56,19 +55,16 @@ export default function App() {
         player.addEventListener(PlayerEventType.SEEKED, console.log);
         player.addEventListener(PlayerEventType.ENDED, console.log);
         player.source = {
-            "sources": [
-                {
-                    "src": "https://cdn.theoplayer.com/video/elephants-dream/playlistCorrectionENG.m3u8",
-                    "type": "application/x-mpegurl"
-                }
-            ],
-            "poster": "https://theoplayer-cdn.s3.eu-west-1.amazonaws.com/react-native-theoplayer/temp/THEOPlayer-1200x1200.png",
+            "sources": {
+                "src": "https://cdn.theoplayer.com/video/elephants-dream/playlistCorrectionENG.m3u8",
+                "type": "application/x-mpegurl"
+            },
             "metadata": {
                 "title": "Elephants Dream",
-                "subtitle": "Elephants Dream",
-                "album": "Elephants Album",
+                "subtitle": "Elephants Dream Subtitle",
+                "album": "Elephants Dream Album",
                 "displayIconUri": "https://theoplayer-cdn.s3.eu-west-1.amazonaws.com/react-native-theoplayer/temp/THEOPlayer-200x200.png",
-                "artist": "The Dream"
+                "artist": "The elephant"
             }
         };
 
@@ -111,9 +107,6 @@ export default function App() {
                             center={<CenteredControlBar left={<SkipButton skip={-10} />} middle={<PlayButton />} right={<SkipButton skip={30} />} />}
                             bottom={
                                 <>
-                                    <ControlBar style={{ justifyContent: 'flex-start' }}>
-                                        <CastMessage />
-                                    </ControlBar>
                                     <ControlBar>
                                         <SeekBar />
                                     </ControlBar>

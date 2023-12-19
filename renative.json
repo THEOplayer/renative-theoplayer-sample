@@ -4,47 +4,64 @@
             "engine": "engine-rn-web"
         },
         "android": {
+            "gradleBuildToolsVersion": "7.4.1",
+            "gradleWrapperVersion": "7.6.2",
+            "gradle.properties": {
+                "org.gradle.jvmargs": "-Xmx2048M -Dkotlin.daemon.jvm.options=\"-Xmx2048M\" --add-exports=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-exports=jdk.unsupported/sun.misc=ALL-UNNAMED"
+            }
         }
     },
     "plugins": {
         "react": "source:rnv",
-        "react-art": "source:rnv",
         "react-dom": "source:rnv",
         "react-native": {
-            "version": "0.70.0"
-        },
-        "react-native-web": "source:rnv",
-        "next": "source:rnv",
-        "react-native-theoplayer": {
-            "version": "3.3.2",
-            "web": {
-            },
-            "android": {
-                "package": "com.theoplayer.ReactTHEOplayerPackage",
-                "path": "node_modules/react-native-theoplayer/android"
-            }
+            "version": "0.72.3"
         },
         "@react-native-community/cli-platform-ios": "source:rnv",
         "@react-native-community/cli": "source:rnv",
-        "react-native-tvos": "source:rnv"
+        "react-native-tvos": "source:rnv",
+        "react-native-web": "source:rnv",
+        "react-native-svg": "source:rnv",
+        "@react-native-community/slider": "source:rnv",
+        "next": "source:rnv",
+        "react-native-theoplayer": {
+            "version": "3.3.2",
+            "web": {},
+            "android": {
+                "package": "com.theoplayer.ReactTHEOplayerPackage",
+                "path": "node_modules/react-native-theoplayer/android",
+                "implementations": [
+                    "'androidx.core:core:1.9.+'"
+                ],
+                "BuildGradle": {
+                    "allprojects": {
+                        "repositories": {
+                            "maven { url(\"$rootDir/../../node_modules/react-native-theoplayer/android/local\") }": true
+                        }
+                    }
+                }
+            }
+        },
+        "svgs": "source:rnv"
     },
     "extendsTemplate": "@rnv/template-starter/renative.json",
-    "projectName": "renative-theoplayer-sample",
+    "projectName": "RenativeTHEOplayerSample",
     "workspaceID": "rnv",
     "defaults": {
-        "title": "THEOplayer Renative Sample",
-        "id": "com.theoplayer.sample.renative",
+        "title": "RenativeTHEOplayer",
+        "id": "com.theoplayer.renative.sample",
         "supportedPlatforms": [
-            "web",
+            "ios",
             "android",
             "androidtv",
-            "firetv"
+            "web",
+            "tvos"
         ]
     },
     "engines": {},
     "templates": {
         "@rnv/template-starter": {
-            "version": "0.36.1"
+            "version": "0.37.4"
         }
     },
     "currentTemplate": "@rnv/template-starter",

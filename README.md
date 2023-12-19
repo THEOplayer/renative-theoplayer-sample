@@ -12,9 +12,33 @@ $ npx rnv run -p web
 $ npx rnv run -p android
 ```
 
-### THEOplayer Web Workers
+### Android Plugin Configuration
 
-The necessary web-workers are copied in the configuration step using a custom  
+`react-native-theoplayer` depends on some extra Maven modules that are
+located inside the package. Due to Renative's project structure, the repository
+url cannot be correctly resolved and has to be set in the `renative.json`
+plugin config:
+
+```json
+"BuildGradle": {
+    "allprojects": {
+        "repositories": {
+            "maven { url(\"$rootDir/../../node_modules/react-native-theoplayer/android/local\") }": true
+        }
+    }
+}
+```
+
+In addition, this line makes sure the correct `androidx.core` module is resolved:
+```json
+"implementations": [
+    "'androidx.core:core:1.9.+'"
+],
+```
+
+### Web build hook
+
+For Web, the necessary web-workers are copied in the configuration step using a custom  
 [copyTHEOworkers build hook](./buildHooks/src/index.js) to a `theoplayer` asset location:
 
 ```typescript
