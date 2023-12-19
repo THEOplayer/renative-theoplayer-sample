@@ -14,12 +14,8 @@
     "plugins": {
         "react": "source:rnv",
         "react-dom": "source:rnv",
-        "react-native": {
-            "version": "0.72.3"
-        },
         "@react-native-community/cli-platform-ios": "source:rnv",
         "@react-native-community/cli": "source:rnv",
-        "react-native-tvos": "source:rnv",
         "react-native-web": "source:rnv",
         "react-native-svg": "source:rnv",
         "@react-native-community/slider": "source:rnv",
@@ -42,7 +38,8 @@
                 }
             }
         },
-        "svgs": "source:rnv"
+        "svgs": "source:rnv",
+        "react-native-tvos": "source:rnv"
     },
     "extendsTemplate": "@rnv/template-starter/renative.json",
     "projectName": "RenativeTHEOplayerSample",
