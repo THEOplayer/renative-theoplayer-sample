@@ -12,7 +12,7 @@ cross-platform development for a variety of target platforms.
 ### Setup
 
 ```bash
-$ yarn install
+$ yarn
 $ npx rnv run -p web
 $ npx rnv run -p android
 ```
