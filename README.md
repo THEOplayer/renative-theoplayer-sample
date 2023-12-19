@@ -1,6 +1,11 @@
 # renative-theoplayer-sample
 
-Demonstrates using react-native-theoplayer in a ReNative app.
+This project demonstrates using [react-native-theoplayer](https://github.com/THEOplayer/react-native-theoplayer) 
+in a [ReNative](https://renative.org/) app.
+
+ReNative is a framework designed to facilitate the development of cross-platform mobile applications using 
+React Native. It extends React Native by providing additional tools and configurations to enable 
+cross-platform development for a variety of target platforms.
 
 ## Quick Start
 
