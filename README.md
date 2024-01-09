@@ -77,3 +77,7 @@ const playerConfig = {
     libraryLocation: 'theoplayer'
 };
 ```
+
+### Known Limitations
+
+- ReNative v0.37.4 is used, which comes with React-Native v0.67.2 and which requires node 16.
