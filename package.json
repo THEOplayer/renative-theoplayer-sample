@@ -34,6 +34,9 @@
     "resolutions": {
         "@babel/traverse": "7.15.0"
     },
+    "engines": {
+        "node": "16.x"
+    },
     "name": "renative-theoplayer-sample",
     "version": "0.1.0",
     "dependencies": {
