@@ -1,0 +1,22 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"  # or "gradle", "maven", etc.
+    directory: "/"  # location of your package file
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "chore"
+    open-pull-requests-limit: 10
+    versioning-strategy: increase
+    allow:
+      - dependency-type: "direct"
+    ignore:
+      - dependency-name: "example-package"
+    labels:
+      - "dependencies"
+      - "security"
+    assignees:
+      - "your-github-username"
+    reviewers:
+      - "reviewer-github-username"
+    auto-merge: true
