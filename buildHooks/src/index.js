@@ -3,8 +3,8 @@ import * as fs from 'fs-extra';
 
 const hooks = {
     copyTHEOworkers: () => {
-        const projectRoot = './';
-        const targetFolder = `${projectRoot}/platformBuilds/app_web/public/theoplayer`;
+        const projectRoot = '.';
+        const targetFolder = `${projectRoot}/platformTemplates/web/public/theoplayer`;
         Logger.logHook(`Copying THEOplayer workers to ${targetFolder}`)
         const workerFiles = [
             'theoplayer.d.js',

@@ -62,5 +62,10 @@
         }
     },
     "currentTemplate": "@rnv/template-starter",
-    "isMonorepo": false
+    "isMonorepo": false,
+    "paths": {
+        "platformTemplatesDirs": {
+            "web": "./platformTemplates"
+        }
+    }
 }

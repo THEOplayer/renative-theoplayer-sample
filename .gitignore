@@ -33,4 +33,4 @@ renative.runtime.json
 rnv-config.local.json
 metro.config.local.js
 .idea
-appConfigs/base/assets/web/public/theoplayer
+platformTemplates/web/public/theoplayer

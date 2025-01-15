@@ -1,7 +1,8 @@
 {
     "scripts": {
         "web-dev": "rnv run -p web",
-        "android": "rnv run -p android"
+        "android": "rnv run -p android",
+        "clean": "rimraf platformAssets platformBuilds buildHooks/dist"
     },
     "devDependencies": {
         "@flexn/assets-renative-outline": "0.3.2",
