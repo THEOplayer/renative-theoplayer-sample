@@ -56,14 +56,14 @@ export default function App() {
         player.addEventListener(PlayerEventType.ENDED, console.log);
         player.source = {
             "sources": {
-                "src": "https://cdn.theoplayer.com/video/elephants-dream/playlistCorrectionENG.m3u8",
+                "src": "https://cdn.theoplayer.com/video/elephants-dream/playlist-single-audio.m3u8",
                 "type": "application/x-mpegurl"
             },
             "metadata": {
                 "title": "Elephants Dream",
                 "subtitle": "Elephants Dream Subtitle",
                 "album": "Elephants Dream Album",
-                "displayIconUri": "https://theoplayer-cdn.s3.eu-west-1.amazonaws.com/react-native-theoplayer/temp/THEOPlayer-200x200.png",
+                "displayIconUri": "https://cdn.theoplayer.com/react-native-theoplayer/temp/THEOPlayer-200x200.png",
                 "artist": "The elephant"
             }
         };
