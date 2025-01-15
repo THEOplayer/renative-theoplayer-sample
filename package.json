@@ -45,7 +45,7 @@
         "@react-native-community/slider": "4.4.2",
         "@rnv/renative": "0.37.4",
         "@theoplayer/react-native-ui": "^0.3.0",
-        "next": "12.1.6",
+        "next": "14.2.10",
         "react": "18.2.0",
         "react-art": "18.2.0",
         "react-dom": "18.2.0",
