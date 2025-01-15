@@ -13,7 +13,7 @@
         "@rnv/template-starter": "0.37.4",
         "@types/react": "18.2.24",
         "@types/react-dom": "~18.2.4",
-        "@types/react-native": "~0.67.2",
+        "@types/react-native": "0.67.2",
         "jetifier": "1.6.5",
         "rnv": "0.37.4",
         "typescript": "4.9.5",
@@ -35,7 +35,7 @@
         "@babel/traverse": "7.15.0"
     },
     "engines": {
-        "node": "16.x"
+        "node": ">=16"
     },
     "name": "renative-theoplayer-sample",
     "version": "0.1.0",
@@ -44,8 +44,8 @@
         "@react-native-community/cli-platform-ios": "^6.0.0",
         "@react-native-community/slider": "4.4.2",
         "@rnv/renative": "0.37.4",
-        "@theoplayer/react-native-ui": "^0.3.0",
-        "next": "14.2.10",
+        "@theoplayer/react-native-ui": "^0.9.0",
+        "next": "12.1.6",
         "react": "18.2.0",
         "react-art": "18.2.0",
         "react-dom": "18.2.0",
@@ -56,7 +56,7 @@
         "react-native-theoplayer": "3.3.2",
         "react-native-web": "0.18.9",
         "svgs": "4.2.0",
-        "theoplayer": "^6.6.1",
+        "theoplayer": "^8.8.3",
         "react-native-tvos": "0.66.3-1"
     }
 }
