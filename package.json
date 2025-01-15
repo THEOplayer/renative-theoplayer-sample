@@ -53,7 +53,7 @@
         "react-native-gesture-handler": "2.9.0",
         "react-native-google-cast": "^4.6.2",
         "react-native-svg": "13.7.0",
-        "react-native-theoplayer": "3.3.2",
+        "react-native-theoplayer": "8.12.0",
         "react-native-web": "0.18.9",
         "svgs": "4.2.0",
         "theoplayer": "^8.8.3",

@@ -21,7 +21,7 @@
         "@react-native-community/slider": "source:rnv",
         "next": "source:rnv",
         "react-native-theoplayer": {
-            "version": "3.3.2",
+            "version": "8.12.0",
             "web": {},
             "android": {
                 "package": "com.theoplayer.ReactTHEOplayerPackage",
