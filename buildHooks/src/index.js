@@ -3,9 +3,9 @@ import * as fs from 'fs-extra';
 
 const hooks = {
     copyTHEOworkers: () => {
-        Logger.logHook('Copying THEOplayer workers.')
         const projectRoot = './';
-        const targetFolder = `${projectRoot}/appConfigs/base/assets/web/public/theoplayer`;
+        const targetFolder = `${projectRoot}/platformBuilds/app_web/public/theoplayer`;
+        Logger.logHook(`Copying THEOplayer workers to ${targetFolder}`)
         const workerFiles = [
             'theoplayer.d.js',
             'THEOplayer.transmux.asmjs.js',
